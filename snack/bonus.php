@@ -8,5 +8,15 @@
 </head>
 <body>
     <a href="../index.php">index</a>
+    <?php 
+    $stringa = ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati modi id non asperiores aperiam explicabo blanditiis assumenda possimus. Ea repudiandae ratione illo praesentium, eius a consequuntur aperiam aspernatur neque tempora. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat voluptatibus fugit a quidem suscipit possimus. Suscipit sed quos nisi, quibusdam fuga maxime molestias nulla veniam eaque? Ut adipisci aperiam rerum?';
+    
+    $arrayString = explode('.', $stringa);
+
+    foreach($arrayString as $substring){
+        echo '<p>'.$substring.'.</p>';
+    }
+    ?>
+   
 </body>
 </html>
