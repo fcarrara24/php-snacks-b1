@@ -18,7 +18,7 @@
     $age = $_GET['age'];
     
     if(!empty($nome)&& !empty($email) && !empty($age)){
-        if(is_numeric($age) && strlen($nome)>3 && str_contains($email, '@')){
+        if(is_numeric($age) && strlen($nome)>3 && str_contains($email, '@') && str_contains($email, '.')){
             echo '<div>Accesso riuscito</div>';
         } else {
             echo '<div>Accesso negato</div>';  
@@ -28,8 +28,8 @@
             if (!strlen($nome)>3){
                 echo 'il nome deve essere piu lungo di 3 caratteri';
             }
-            if (!str_contains( $email, '@')){
-                echo 'la mail deve contenere una @';
+            if (!str_contains( $email, '@') || !str_contains($email, '.')){
+                echo 'la mail deve contenere una @ e un .';
             }
         }
         
