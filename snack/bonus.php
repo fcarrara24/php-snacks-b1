@@ -7,8 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="./snack/snack1.php">snack 1</a>
-    <a href="./snack/snack2.php">snack 2</a>
-    <a href="./snack/bonus.php">bonus</a>
+    <a href="../index.php">index</a>
 </body>
 </html>
