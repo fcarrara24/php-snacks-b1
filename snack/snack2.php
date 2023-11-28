@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="../index.php">index</a>
+<a class="button btn-warning px-3" href="../index.php">index</a>
 
     <?php
     $nome= $_GET['nome'];
@@ -18,7 +18,7 @@
     $age = $_GET['age'];
     
     if(!empty($nome)&& !empty($email) && !empty($age)){
-        if(is_numeric($age) &&strlen($nome)>3 && str_contains($email, '@')){
+        if(is_numeric($age) && strlen($nome)>3 && str_contains($email, '@')){
             echo '<div>Accesso riuscito</div>';
         } else {
             echo '<div>Accesso negato</div>';  

@@ -53,11 +53,13 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="../index.php">index</a>
+<a class="button btn-warning px-3" href="../index.php">index</a>
+<div class="d-flex flex-column justify-content-center align-items-center flex-grow-1 ">
     <?php
         foreach ($matchArray as $matchKey => $matchValues){
-            echo '<div>'.$matchValues['casa']['nome'].' - '.$matchValues['sfidanti']['nome'].' | '.$matchValues['casa']['punti'].' - '.$matchValues['sfidanti']['punti'].'</div>';
+            echo '<div class="card">'.$matchValues['casa']['nome'].' - '.$matchValues['sfidanti']['nome'].' | '.$matchValues['casa']['punti'].' - '.$matchValues['sfidanti']['punti'].'</div>';
         }
     ?>
+</div>
 </body>
 </html>

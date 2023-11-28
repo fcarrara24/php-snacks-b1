@@ -7,8 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="./snack/snack1.php">snack 1</a>
-    <a href="./snack/snack2.php">snack 2</a>
-    <a href="./snack/bonus.php">bonus</a>
+    <div class="d-flex flex-row justify-content-center gap-2 align-items-center w-100 h-100 flex-wrap pt-5 ">
+        <div class="p-3 bg-warning card"><a href="./snack/snack1.php">snack 1</a></div>
+        <div class="p-3 bg-warning card"><a href="./snack/snack2.php">snack 2</a></div>
+        <div class="p-3 bg-warning card"><a href="./snack/bonus.php">bonus</a></div>
+    </div>
 </body>
 </html>
