@@ -1,3 +1,49 @@
+<?php
+    $matchArray = [
+        [
+            'casa' => [
+                'nome' => 'calzini puzzolenti',
+                'punti' => 65
+            ],
+            'sfidanti' => [
+                'nome' => 'ratti selvaggi',
+                'punti' => 43
+            ]
+        ],
+        [
+            'casa' => [
+                'nome' => 'cani rabbiosi',
+                'punti' => 69
+            ],
+            'sfidanti' => [
+                'nome' => 'criceti assassini',
+                'punti' => 82
+            ]
+        ],
+        [
+            'casa' => [
+                'nome' => 'humus bollito',
+                'punti' => 12
+            ],
+            'sfidanti' => [
+                'nome' => 'pozzanghere insaponate',
+                'punti' => 13
+            ]
+        ],
+        [
+            'casa' => [
+                'nome' => 'bava bavarese',
+                'punti' => 27
+            ],
+            'sfidanti' => [
+                'nome' => 'papere esplose',
+                'punti' => 20
+            ]
+        ],
+    ];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,5 +54,10 @@
 </head>
 <body>
     <a href="../index.php">index</a>
+    <?php
+        foreach ($matchArray as $matchKey => $matchValues){
+            echo '<div>'.$matchValues['casa']['nome'].' - '.$matchValues['sfidanti']['nome'].' | '.$matchValues['casa']['punti'].' - '.$matchValues['sfidanti']['punti'].'</div>';
+        }
+    ?>
 </body>
 </html>
